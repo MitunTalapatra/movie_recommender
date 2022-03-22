@@ -4,5 +4,4 @@ matplotlib
 seaborn
 plotly
 fuzzywuzzy
-sklearn.impute
-sklearn.decomposition
+scikit-learn
