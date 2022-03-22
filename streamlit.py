@@ -28,13 +28,13 @@ st.write('**Little** *app* for finding a good movie to watch [datset](https://gr
 st.image('https://images.app.goo.gl/Qt3ziMxz2GxzvmbB9')
 st.write('Please enter 3 movies you have watched and rate them from 0-5')
 
-input_1 = st.text_input('Movie 1', '') 
+input_1 = st.text_input('Movie 1', 'A Beautiful Mind') 
 rating_1= st.slider('Rate movie 1', 0.0, 5.0, (0.0, 5.0))
 
-input_2 = st.text_input('Movie 2', '') 
+input_2 = st.text_input('Movie 2', 'Gladiator') 
 rating_2= st.slider('Rate movie 2', 0.0, 5.0, (0.0, 5.0))
 
-input_3 = st.text_input('Movie 3', '') 
+input_3 = st.text_input('Movie 3', 'La La Land') 
 rating_3= st.slider('Rate movie 3', 0.0, 5.0, (0.0, 5.0))
 
 user_rating = {
