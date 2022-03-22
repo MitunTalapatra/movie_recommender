@@ -42,17 +42,17 @@ user_rating = {
     input_1: rating_3
 }
 # Write heading for Random Recommendation
-st.header('Movies randomly selected for you...')
-st.write('Display a sample of data points from `penguins dataset`',recommend_random(movies, user_rating, k=5))
+st.header('Random Selection')
+st.write('Movies randomly selected for you...', recommend_random(movies, user_rating, k=5))
 
 # Write heading for Popular Recommendation
-st.header('Most popular movies for you...')
-st.write('Display a sample of data points from `penguins dataset`',recommend_most_popular(user_rating, movies, k=5))
+st.header('Most popular')
+st.write('Most popular movies for you...', recommend_most_popular(user_rating, movies, k=5))
 
 # Write heading for Similar cluster Recommendation
-st.header('Similar movies based on your experience...')
-st.write('Display a sample of data points from `penguins dataset`', recommend_from_same_cluster(user_rating, movies, k=3))
+st.header('Similarity 1')
+st.write('Similar movies based on your experience...', recommend_from_same_cluster(user_rating, movies, k=3))
 
 # Write heading for Similar cluster Recommendation
-st.header('Similar movies based on other users experience...')
-st.write('Display a sample of data points from `penguins dataset`', recommend_with_NMF(user_mat, user_rating, dictionary, k=5))
+st.header('Similarity 1')
+st.write('Similar movies based on other users experience...', recommend_with_NMF(user_mat, user_rating, dictionary, k=5))
