@@ -127,3 +127,15 @@ def recommend_with_user_similarity(user_item_matrix, user_rating, k=5):
 
 def similar_movies(movieId, movie_movie_distance_matrix):
     pass
+
+if __name__ == "__main__":
+    user_rating = {
+        "four rooms": 5,
+        "sudden death": 3,
+        "othello": 4,
+        "nixon": 3,
+        "Golden eye": 1,
+        "total eclipse": 5,
+        "nadja": 3
+    }
+    print(recommend_from_same_cluster(user_rating, movies, k=3))
