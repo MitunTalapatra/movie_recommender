@@ -38,9 +38,9 @@ input_3 = st.text_input('Movie 3', 'La La Land')
 rating_3= st.slider('Rate movie 3', 0.0, 5.0, (0.0, 5.0))
 
 user_rating = {
-    input_1: rating_1,
-    input_1: rating_2,
-    input_1: rating_3
+    st.text_input('Movie 1', 'A Beautiful Mind'): rating_1,
+    st.text_input('Movie 2', 'Gladiator'): rating_2,
+    st.text_input('Movie 3', 'La La Land'): rating_3
 }
 # Write heading for Random Recommendation
 st.header('Random Selection')
