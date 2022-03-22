@@ -4,6 +4,7 @@ import numpy as np
 from utils import lookup_movieId, match_movie_title, get_popularity, unseen_movies, get_cluster
 from sklearn.impute import SimpleImputer
 from sklearn.decomposition import NMF
+from recommender import recommend_random, recommend_most_popular, recommend_from_same_cluster, recommend_with_NMF
 
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
