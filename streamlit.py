@@ -52,5 +52,5 @@ st.header('Similarity 1')
 st.write('Similar movies based on your experience...', recommend_from_same_cluster(user_rating, movies, k=3))
 
 # Write heading for Similar cluster Recommendation
-st.header('Similarity 1')
+st.header('Similarity 2')
 st.write('Similar movies based on other users experience...', recommend_with_NMF(user_mat, user_rating, dictionary, k=5))
