@@ -115,8 +115,10 @@ def recommend_with_NMF(user_mat, user_rating, dictionary, k=5):
     PQ_df = pd.DataFrame(PQ, columns=new_df.columns, index=new_df.index.values)
 
     #recommendation
-    top_20 = PQ_df[0].sort_values(ascending = False).head(20)
-    recommend_5 = top_20.sample(frac = 1.0).head(5)
+    mask = ~PQ_df.index.isin(user_df.index)
+    result = PQ_df.loc[mask]
+    top_50 = PQ_df[0].sort_values(ascending = False).head(50)
+    recommend_5 = top_50.sample(frac = 1.0).head(5)
     recommend_nmf = list(recommend_5.index.values)
     
     return recommend_nmf
