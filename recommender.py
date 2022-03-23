@@ -22,9 +22,9 @@ def recommend_random(movies, user_rating, k=5):
     """
     return k random unseen movies for user 
     """
-    #recommend = unseen_movies(movies, user_rating)
-    #random_movies = np.random.choice(list(recommend.index), replace=False, size=k)
-    random_movies = np.random.choice(list(movies['title']), replace=False, size=k)
+    recommend = unseen_movies(movies, user_rating)
+    random_movies = np.random.choice(list(recommend.index), replace=False, size=k)
+    #random_movies = np.random.choice(list(movies['title']), replace=False, size=k)
     
     return random_movies
 
