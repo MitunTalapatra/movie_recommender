@@ -40,9 +40,9 @@ user_rating = {
     input_3: rating_3
 }
 # Write heading for Random Recommendation
-st.header('Random Selection')
-st.write('Movies randomly selected for you...', recommend_random(movies, user_rating, k=5))
-
+#st.header('Random Selection')
+#st.write('Movies randomly selected for you...', recommend_random(movies, user_rating, k=5))
+st.write(user_rating)
 # Write heading for Popular Recommendation
 st.header('Most popular')
 st.write('Most popular movies for you...', recommend_most_popular(user_rating, movies, k=5))
