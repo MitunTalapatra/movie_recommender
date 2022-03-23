@@ -28,11 +28,11 @@ st.write('**My** **app** for finding a good movie to watch [dataset](https://gro
 st.image('https://media2.giphy.com/media/l84TE5FS6aTzEkkyGz/200.webp?cid=ecf05e47womhz82qph3kfzei02upnv3vb8egugatuyti71kq&rid=200.webp&ct=g')
 st.write('Please enter 3 movies you have watched and rate them from 0-5')
 
-input_1 = st.text_input('Movie 1', 'A Beautiful Mind'); rating_1= st.slider('Rate movie 1', 0.0, 5.0, (0.0, 5.0))
+input_1 = st.text_input('Movie 1', 'A Beautiful Mind'); rating_1= st.slider('Rate movie 1', 0.0, 5.0, (0.0))
 
-input_2 = st.text_input('Movie 2', 'Gladiator'); rating_2= st.slider('Rate movie 2', 0.0, 5.0, (0.0, 5.0))
+input_2 = st.text_input('Movie 2', 'Gladiator'); rating_2= st.slider('Rate movie 2', 0.0, 5.0, (0.0))
 
-input_3 = st.text_input('Movie 3', 'La La Land'); rating_3= st.slider('Rate movie 3', 0.0, 5.0, (0.0, 5.0))
+input_3 = st.text_input('Movie 3', 'La La Land'); rating_3= st.slider('Rate movie 3', 0.0, 5.0, (0.0))
 
 user_rating = {
     input_1: rating_1,
