@@ -25,7 +25,7 @@ st.title('Movie Recommender')
 # Write data taken from https://allisonhorst.github.io/palmerpenguins/
 st.write('**My** **app** for finding a good movie to watch [dataset](https://grouplens.org/datasets/movielens/)')
 # Put image https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/man/figures/lter_penguins.png
-st.image(https://c.wallhere.com/photos/f5/92/1920x1080_px_Inception_movies-630272.jpg!d')
+st.image('https://c.wallhere.com/photos/f5/92/1920x1080_px_Inception_movies-630272.jpg!d')
 st.write('Please enter 3 movies you have watched and rate them from 0-5')
 
 input_1 = st.text_input('Movie 1', 'A Beautiful Mind'); rating_1= st.slider('Rate movie 1', 0.0, 5.0, (0.0))
